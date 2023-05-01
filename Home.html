@@ -2,18 +2,32 @@
 <html>
 
 <head>
-
+    <!DOCTYPE html>
+    <html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
+
+
 
 <body>
     <header>
-        South Canterbury's Premier Wildlife Park!
+        <h1> Canterbury's Premier Wildlife Park!
+        </h1>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Sigmar&display=swap"
+            rel="stylesheet">
 
     </header>
 
     <nav>
-        <a href="AfricanArea.html">Africa Area</a>
-        <a href="AmericanArea.html">American Area</a>
+        <a class="AfricanArea" href="AfricanArea.html">African Area</a>
+        <a class="AmericanArea" href="AmericanArea.html">American Area</a>
+        <a class="ArcticArea" href="ArcticArea.htm">Arctic Area</a>
+        <a class="OurVisionaries" href="Us.html">Our Visionaries</a>
     </nav>
 
     <main>
@@ -27,13 +41,14 @@
 
             Join us as we celebrate the beauty of nature and inspire a new generation of wildlife enthusiasts. Our park
             offers a range of immersive experiences, educational programs, and engaging activities for visitors of all
-            ages. Plan your visit today and discover the wonders of the animal kingdom at South Canterbury's Premier
-            Wildlife Park!
+            ages.
         </p>
     </main>
 
     <footer>
-
+        <p>Plan your visit today and discover the wonders of the animal kingdom at South Canterbury's Premier Wildlife
+            Park!
+        </p>
     </footer>
 </body>
 
@@ -41,7 +56,58 @@
     body {
         display: grid;
         grid:
-            "h  h" auto "n  ." auto "m  m" auto "f  f" auto/4fr 4fr;
+            "n  h" auto "m  m" auto "f  ." auto/2fr 4fr;
+    }
+
+    header {
+        grid-area: h;
+
+    }
+
+    nav {
+        grid-area: n;
+    }
+
+    main {
+        grid-area: m;
+    }
+
+    footer {
+        grid-area: f;
+    }
+
+    h1 {
+        font-family: 'Sigmar', cursive;
+        color: #EF7B45;
+    }
+
+    p {
+        font-family: 'Oswald', sans-serif;
+    }
+
+    h2 {
+        font-family: 'Oswald', sans-serif;
+    }
+
+    nav {
+        background-color: #14591D;
+
+    }
+
+    a {
+        color: #EF7B45;
+    }
+
+    .AfricanArea:hover {
+        background-color: #BB9457;
+        color: #4A442D;
+    }
+
+    .AmericanArea:hover {}
+
+    header {
+        background-color: #14591D;
+        /* color: #DEB841; */
     }
 </style>
 

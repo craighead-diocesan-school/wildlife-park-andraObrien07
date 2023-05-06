@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!DOCTYPE html>
+    <html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>African Savannah</h1>
+    </header>
+
+    <nav>
+        <a class="Home" href="Home.html">African Area</a>
+        <a class="AmericanArea" href="AmericanArea.html">American Area</a>
+        <a class="ArcticArea" href="ArcticArea.htm">Arctic Area</a>
+        <a class="OurVisionaries" href="Us.html">Our Visionaries</a>
+    </nav>
+
+    <main>
+        <h2>Step into the African Savannah</h2>
+        <p>
+            Experience the magic of Africa's diverse and captivating landscapes, right here in South Canterbury! Our
+            African area is home to some of the continent's most iconic animals including...
+        </p>
+
+        <h3>The Majestic Lions</h3>
+        <div class="container">
+            <img src="lion-1-jeremy-avery.jpg" alt="Picture of Jeremy, lion 1">
+            <li> Jeremy Avery</li>
+            <img src="lion-2-leonard-von-bibra.jpg" alt="Picture of Leonard lion 1">
+            <li>Leonard Von Bibra</li>
+            <img src="lion-3-bisakha-datta.jpg" alt="Picture of Bisakha lion 1">
+            <li>Bisakha Datta</li>
+        </div>
+
+        <h3>The Swift Cheetah</h3>
+        <div class="container">
+            <img src="cheetah-1-rodrigo-ardilha.jpg" alt="Picture of rodrigo, Cheetah 1">
+            <li>Rodrigo Ardilha</li>
+            <img src="cheetah-2-christin-noelle.jpg" alt="Picture of christin, Cheetah 1">
+            <li>Christin Noelle</li>
+            <img src="cheetah-3-sammy-wong.jpg" alt="Picture of Sammy, Cheetah 1">
+        </div>
+
+        <div class="container">
+            <li>The Towering Giraffe</li>
+            <img src="polar-bear-1-jason-hillier.jpg" alt="Picture of polar bear 1">
+            <img src="arctic-fox-1-jonatan-pie.jpg" alt="Picture of fox 1">
+            <img src="fur-seal-1-karen-lau.jpg" alt="Picture of seal">
+        </div>
+
+
+        <p>
+            Stroll through our park and observe these magnificent creatures up close, while learning about their natural
+            habitats, behaviors, and the conservation efforts in place to protect their future. Don't miss our daily
+            animal encounters, feeding sessions, and interactive talks led by our passionate team of animal experts.
+            Unleash your inner explorer and experience the African Savannah today!
+
+        </p>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+<style>
+    body {
+        display: grid;
+        grid:
+            "n  h" auto "m  m" auto "f  ." auto/1fr 4fr;
+
+    }
+
+    header {
+        grid-area: h;
+
+    }
+
+    nav {
+        grid-area: n;
+    }
+
+    main {
+        grid-area: m;
+    }
+
+    footer {
+        grid-area: f;
+    }
+
+    img {
+        height: 18em;
+        /* border: 10px solid #DEB814; */
+        border: 10px solid #BB9457;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        gap: 2%;
+        justify-content: baseline;
+        align-items: normal;
+        margin-top: 1%;
+    }
+</style>
+
+</html>

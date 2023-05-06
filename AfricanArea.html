@@ -14,6 +14,11 @@
 
     <header>
         <h1>African Savannah</h1>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Sigmar&display=swap"
+            rel="stylesheet">
+
     </header>
 
     <nav>
@@ -28,6 +33,8 @@
         <p>
             Experience the magic of Africa's diverse and captivating landscapes, right here in South Canterbury! Our
             African area is home to some of the continent's most iconic animals including... </p>
+
+        <h3>The Majestic Lions</h3>
         <p>
             Introducing our pride of lions, led by our regal male, Leo, and his beautiful lioness companions, Nala and
             Zara. These magnificent big cats are known for their prowess, strength, and social nature. In our park,
@@ -36,32 +43,65 @@
             in place to protect these incredible animals in the wild.
         </p>
 
-        <h3>The Majestic Lions</h3>
         <div class="container">
-            <img src="lion-1-jeremy-avery.jpg" alt="Picture of Jeremy, lion 1">
-            <img src="lion-2-leonard-von-bibra.jpg" alt="Picture of Leonard lion 1">
-            <img src="lion-3-bisakha-datta.jpg" alt="Picture of Bisakha lion 1">
-            <p>Photo taken by Jeremy Avery.
-                Photo taken by Leonard Von Bibra.
-                Photo taken by Bisakha Datta.
-            </p>
+            <div class="animal">
+                <img src="lion-1-jeremy-avery.jpg" alt="Picture by Jeremy, lion 1">
+                <p>Photo taken by Jeremy Avery.</p>
+            </div>
+
+            <div class="Lion">
+                <img src="lion-2-leonard-von-bibra.jpg" alt="Picture by Leonard lion 1">
+                <p> Photo taken by Leonard Von Bibra.</p>
+            </div>
+
+            <div class="Lion">
+                <img src="lion-3-bisakha-datta.jpg" alt="Picture by Bisakha lion 1">
+                <p> Photo taken by Bisakha Datta.</p>
+            </div>
         </div>
 
         <h3>The Swift Cheetah</h3>
-        <div class="container">
-            <img src="cheetah-1-rodrigo-ardilha.jpg" alt="Picture of rodrigo, Cheetah 1">
-            <li>Rodrigo Ardilha</li>
-            <img src="cheetah-2-christin-noelle.jpg" alt="Picture of christin, Cheetah 1">
-            <li>Christin Noelle</li>
-            <img src="cheetah-3-sammy-wong.jpg" alt="Picture of Sammy, Cheetah 1">
-            <li>sammy-wong</li>
-        </div>
+        <p>Meet our swift and graceful cheetah duo, Dash and Blaze. These elegant felines hold the title of the fastest
+            land animals on Earth, capable of reaching speeds up to 60 miles per hour (97 km/h) in a matter of seconds.
+            Watch them in action as they display their extraordinary agility and acceleration during our daily cheetah
+            runs. Get to know more about their unique hunting strategies, their vulnerable status in the wild, and the
+            initiatives aimed at safeguarding their population.
+        </p>
 
         <div class="container">
-            <li>The Towering Giraffe</li>
-            <img src="polar-bear-1-jason-hillier.jpg" alt="Picture of polar bear 1">
-            <img src="arctic-fox-1-jonatan-pie.jpg" alt="Picture of fox 1">
-            <img src="fur-seal-1-karen-lau.jpg" alt="Picture of seal">
+            <div class="animal">
+                <img src="cheetah-1-rodrigo-ardilha.jpg" alt="Picture by rodrigo, Cheetah 1">
+                <p>Photo taken by Rodrigo Ardilha</p>
+            </div>
+
+            <div class="animals">
+                <img src="cheetah-2-christin-noelle.jpg" alt="Picture by christin, Cheetah 1">
+                <p>Photo taken by Christin Noelle</p>
+            </div>
+
+            <div class="animal">
+                <img src="cheetah-3-sammy-wong.jpg" alt="Picture by Sammy, Cheetah 1">
+                <p>Photo taken by Sammy Wong</p>
+            </div>
+        </div>
+
+        <h3>The Towering Giraffe</h3>
+        <p>Say hello to our gentle giants, Skyler, the tallest in our park, and Luna, a young and curious female. These
+            awe-inspiring creatures are known for their elongated necks and distinctive spotted patterns, which provide
+            camouflage in the wild. At our wildlife park, you can witness Skyler and Luna gracefully browsing on tree
+            leaves and engaging in gentle interactions with each other. Learn about their unique physiology, social
+            behaviors, and the ongoing conservation efforts to preserve their natural habitats.
+        </p>
+        <div class="container">
+            <div class="animal">
+                <img src="giraffe-1-nikolay-tchaouchev.jpg" alt="Picture by nikolay, Giraffe 1">
+                <p>Photo taken by Nikolay Tchaouchev</p>
+            </div>
+
+            <div class="animal">
+                <img src="giraffe-2-sian-cooper.jpg" alt="Picture by sian, Giraffe 1">
+                <p>Photo taken by Sian Cooper</p>
+            </div>
         </div>
 
 
@@ -110,13 +150,126 @@
         border: 10px solid #BB9457;
     }
 
+    .animal {
+        width: 50%;
+    }
+
     .container {
         display: flex;
         flex-direction: row;
         gap: 2%;
-        justify-content: baseline;
-        align-items: normal;
         margin-top: 1%;
+        justify-content: baseline;
+
+
+    }
+
+    h1 {
+        font-family: 'Sigmar', cursive;
+        /* color: #EF7B45; */
+        color: #BB9457;
+        font-size: 400%;
+        text-align: center;
+    }
+
+    main {
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+    }
+
+    h2 {
+        font-family: 'Oswald', sans-serif;
+    }
+
+    nav {
+        /* background-color: #14591D; */
+        background-color: #305A2D;
+    }
+
+
+    a {
+        /* color: #EF7B45; */
+        color: #BB9457;
+    }
+
+    .Home:hover {
+        background-color: #BB9457;
+        color: #2E0014;
+        display: block;
+        border-radius: 100%;
+        border: 25px solid #BB9457;
+
+    }
+
+    .AmericanArea:hover {
+        /* background-color: #809848; */
+        background-color: #99AA38;
+        color: #0A210F;
+        display: block;
+        border-radius: 100%;
+        border: 25px solid #99AA38;
+    }
+
+    footer {
+        /* background-color: #DEB814 */
+        /* background-color: #4A442D; */
+        background-color: #305A2D;
+        color: #BB9457;
+
+    }
+
+    .ArcticArea:hover {
+        /* color: #037971; */
+        color: #3e92cc;
+        background-color: #16324F;
+        display: block;
+        border-radius: 100%;
+        border: 25px solid #16324F;
+    }
+
+    .OurVisionaries:hover {
+        background-color: #DEB814;
+        color: #6f1D1B;
+        display: block;
+        border-radius: 100%;
+        border: 25px solid #DEB814;
+    }
+
+    .Home {
+        display: block;
+        border-radius: 40%;
+        /* border: 25px solid #14591D;
+    } */
+        border: 25px solid #305A2D;
+    }
+
+    .AmericanArea {
+        display: block;
+        border-radius: 40%;
+        /* border: 25px solid #14591D; */
+        border: 25px solid #305A2D;
+    }
+
+
+    .ArcticArea {
+        display: block;
+        border-radius: 40%;
+        /* border: 25px solid #14591D; */
+        border: 25px solid #305A2D;
+    }
+
+
+    .OurVisionaries {
+        display: block;
+        border-radius: 40%;
+        /* border: 25px solid #14591D; */
+        border: 25px solid #305A2D;
+    }
+
+
+    header {
+        /* background-color: #14591D; */
+        background-color: #4A442D;
     }
 </style>
 

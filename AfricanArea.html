@@ -32,58 +32,67 @@
         <p>
             Experience the magic of Africa's diverse and captivating landscapes, right here in South Canterbury! Our
             African area is home to some of the continent's most iconic animals including... </p>
+        <div class="sidesleft">
+            <h3>The Majestic Lions</h3>
+            <p>
+                Introducing our pride of lions, led by our regal male, Leo, and his beautiful lioness companions, Nala
+                and
+                Zara. These magnificent big cats are known for their prowess, strength, and social nature. In our park,
+                you'll have the chance to observe the complex dynamics of the lion pride as they interact, play, and
+                rest
+                together. Learn about their hunting techniques, their roles within the pride, and the conservation
+                efforts
+                in place to protect these incredible animals in the wild.
+            </p>
 
-        <h3>The Majestic Lions</h3>
-        <p>
-            Introducing our pride of lions, led by our regal male, Leo, and his beautiful lioness companions, Nala and
-            Zara. These magnificent big cats are known for their prowess, strength, and social nature. In our park,
-            you'll have the chance to observe the complex dynamics of the lion pride as they interact, play, and rest
-            together. Learn about their hunting techniques, their roles within the pride, and the conservation efforts
-            in place to protect these incredible animals in the wild.
-        </p>
+            <div class="container">
+                <div class="animal">
+                    <img src="lion-1-jeremy-avery.jpg" alt="Picture by Jeremy, lion 1">
+                    <p>Photo taken by Jeremy Avery.</p>
+                </div>
 
-        <div class="container">
-            <div class="animal">
-                <img src="lion-1-jeremy-avery.jpg" alt="Picture by Jeremy, lion 1">
-                <p>Photo taken by Jeremy Avery.</p>
-            </div>
+                <div class="animal">
+                    <img src="lion-2-leonard-von-bibra.jpg" alt="Picture by Leonard lion 1">
+                    <p> Photo taken by Leonard Von Bibra.</p>
+                </div>
 
-            <div class="animal">
-                <img src="lion-2-leonard-von-bibra.jpg" alt="Picture by Leonard lion 1">
-                <p> Photo taken by Leonard Von Bibra.</p>
-            </div>
-
-            <div class="animal">
-                <img src="lion-3-bisakha-datta.jpg" alt="Picture by Bisakha lion 1">
-                <p> Photo taken by Bisakha Datta.</p>
-            </div>
-        </div>
-
-        <h3>The Swift Cheetah</h3>
-        <p>Meet our swift and graceful cheetah duo, Dash and Blaze. These elegant felines hold the title of the fastest
-            land animals on Earth, capable of reaching speeds up to 60 miles per hour (97 km/h) in a matter of seconds.
-            Watch them in action as they display their extraordinary agility and acceleration during our daily cheetah
-            runs. Get to know more about their unique hunting strategies, their vulnerable status in the wild, and the
-            initiatives aimed at safeguarding their population.
-        </p>
-
-        <div class="container">
-            <div class="animal">
-                <img src="cheetah-1-rodrigo-ardilha.jpg" alt="Picture by rodrigo, Cheetah 1">
-                <p>Photo taken by Rodrigo Ardilha</p>
-            </div>
-
-            <div class="animals">
-                <img src="cheetah-2-christin-noelle.jpg" alt="Picture by christin, Cheetah 1">
-                <p>Photo taken by Christin Noelle</p>
-            </div>
-
-            <div class="animal">
-                <img src="cheetah-3-sammy-wong.jpg" alt="Picture by Sammy, Cheetah 1">
-                <p>Photo taken by Sammy Wong</p>
+                <div class="animal">
+                    <img src="lion-3-bisakha-datta.jpg" alt="Picture by Bisakha lion 1">
+                    <p> Photo taken by Bisakha Datta.</p>
+                </div>
             </div>
         </div>
+        <div class="sidesright">
+            <h3>The Swift Cheetah</h3>
+            <p>Meet our swift and graceful cheetah duo, Dash and Blaze. These elegant felines hold the title of the
+                fastest
+                land animals on Earth, capable of reaching speeds up to 60 miles per hour (97 km/h) in a matter of
+                seconds.
+                Watch them in action as they display their extraordinary agility and acceleration during our daily
+                cheetah
+                runs. Get to know more about their unique hunting strategies, their vulnerable status in the wild, and
+                the
+                initiatives aimed at safeguarding their population.
+            </p>
 
+            <div class="container">
+                <div class="animal">
+                    <img src="cheetah-1-rodrigo-ardilha.jpg" alt="Picture by rodrigo, Cheetah 1">
+                    <p>Photo taken by Rodrigo Ardilha</p>
+                </div>
+
+                <div class="animals">
+                    <img src="cheetah-2-christin-noelle.jpg" alt="Picture by christin, Cheetah 1">
+                    <p>Photo taken by Christin Noelle</p>
+                </div>
+
+                <div class="animal">
+                    <img src="cheetah-3-sammy-wong.jpg" alt="Picture by Sammy, Cheetah 1">
+                    <p>Photo taken by Sammy Wong</p>
+                </div>
+            </div>
+        </div>
+        <div class="sidesleft2"></div>
         <h3>The Towering Giraffe</h3>
         <p>Say hello to our gentle giants, Skyler, the tallest in our park, and Luna, a young and curious female. These
             awe-inspiring creatures are known for their elongated necks and distinctive spotted patterns, which provide
@@ -102,7 +111,7 @@
                 <p>Photo taken by Sian Cooper</p>
             </div>
         </div>
-
+        </div>
         <p>Stroll through our park and observe these magnificent creatures up close, while learning about their natural
             habitats, behaviors, and the conservation efforts in place to protect their future. Don't miss our daily
             animal encounters, feeding sessions, and interactive talks led by our passionate team of animal experts.</p>
@@ -121,7 +130,8 @@
     body {
         display: grid;
         grid:
-            "n  h" auto "m  m" auto "f  ." auto/1fr 4fr;
+            "h  h   ." auto ".  n   n" auto "m  m   m" auto "f  f   f" auto/1fr 6fr 1fr;
+
 
     }
 
@@ -140,6 +150,21 @@
 
     footer {
         grid-area: f;
+    }
+
+    .sidesleft {
+        display: block;
+        padding-right: 18%;
+    }
+
+    .sidesright {
+        display: block;
+        padding-left: 18%;
+    }
+
+    .sidesleft2 {
+        display: block;
+        padding-right: 18%;
     }
 
     img {
@@ -182,6 +207,7 @@
     nav {
         /* background-color: #14591D; */
         background-color: #305A2D;
+        text-align: center;
     }
 
 

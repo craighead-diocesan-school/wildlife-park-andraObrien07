@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>American Wilderness</h1>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Sigmar&display=swap"
+            rel="stylesheet">
+    </header>
+
+    <nav>
+        <a class="Home" href="Home.html">Home</a>
+        <a class="AfricanArea" href="AfricanArea.html">African Area</a>
+        <a class="ArcticArea" href="ArcticArea.html">Arctic Area</a>
+        <a class="OurVisionaries" href="Us.html">Our Visionaries</a>
+    </nav>
+
+    <main>
+        <h2>Discover the American Wilderness </h2>
+        <p>
+            Venture into the heart of the American wilderness and connect with the rugged beauty of North America's most
+            captivating species, each with their own unique charm and allure. Our American area showcases...
+        </p>
+        <h3>The incredible bison</h3>
+        <p>Introducing our robust bison herd, led by the mighty Thunder, and his companions, Storm and Breeze. These
+            magnificent creatures, often referred to as buffalo, are symbols of the American West and once roamed the
+            plains in vast numbers. Observe our bison as they graze on the grasslands, showcasing their strength and
+            resilience. Learn about their historical significance, their role in the ecosystem, and the conservation
+            efforts that have helped restore their populations in the wild.
+        </p>
+
+        <div class="container">
+            <div class="animal">
+                <img src="bison-1-pete-nuij.jpg" alt="Picture by pete, Bison 1">
+                <p>Photo taken by Pete Nuijy.</p>
+            </div>
+
+            <div class="animal">
+                <img src="bison-2-philip-brown.jpg" alt="Picture by Philip, bison 2">
+                <p> Photo taken by Philip Brown.</p>
+            </div>
+
+            <div class="animal">
+                <img src="bison-3-goutham-ganesh.jpg" alt="Picture by Goutham, bison 3">
+                <p> Photo taken by Goutham Ganesh.</p>
+            </div>
+        </div>
+
+        <h3>The Mighty Moose</h3>
+        <p>Meet our majestic moose duo, Maple and Forest. These awe-inspiring animals are the largest members of the
+            deer family and are known for their towering stature and impressive antlers. Watch as Maple and Forest roam
+            our American area, foraging on aquatic vegetation and demonstrating their exceptional swimming abilities.
+            Discover more about their unique adaptations, social structure, and the ongoing conservation programs aimed
+            at protecting their habitats and populations.
+        </p>
+
+        <div class="container">
+            <div class="animal">
+                <img src="moose-1-sam-te-kiefte.jpg" alt="Picture by Sam, Moose 1">
+                <p>Photo taken by Sam Te Kiefte</p>
+            </div>
+
+            <div class="animals">
+                <img src="moose-2-zachery-perry.jpg" alt="Picture by Zachery, moose 2">
+                <p>Photo taken by Zachery Perry</p>
+            </div>
+        </div>
+
+        <h3>The Industrious Beaver</h3>
+        <p>Say hello to our industrious beaver family, Chip and Willow, along with their adorable kits. These remarkable
+            rodents are known as nature's engineers, with their ability to build intricate dams and lodges that play a
+            vital role in maintaining healthy wetland ecosystems. Observe our beavers at work as they construct and
+            maintain their impressive structures, using their sharp teeth and powerful tails. Learn about their
+            fascinating social behaviors, their importance in the ecosystem, and the conservation efforts in place to
+            protect these incredible creatures.
+
+        </p>
+        <div class="container">
+            <div class="animal">
+                <img src="beaver-1-svetozar-cenisev.jpg" alt="Picture by svetozar, Beaver 1">
+                <p>Photo taken by Svetozar Cenisev</p>
+            </div>
+
+            <div class="animal">
+                <img src="beaver-2-francesco-ungaro.jpg" alt="Picture by francesco, beaver 2">
+                <p>Photo taken by Francesco Ungaro</p>
+            </div>
+
+            <div class="animal">
+                <img src="beaver-3-niklas-hamann.jpg" alt="Picture by niklas, beaver 3">
+                <p>Photo taken by Niklas Hamann</p>
+            </div>
+        </div>
+
+        <p>Immerse yourself in the rich tapestry of the American landscape, as you learn about the vital roles these
+            animals play in their ecosystems and the importance of conservation efforts in preserving their habitats.
+        </p>
+
+    </main>
+
+    <footer>
+        <p>Join us for guided tours, educational talks, and special events that celebrate the diverse wildlife of the
+            American continent. </p>
+    </footer>
+</body>
+
+<style>
+    body {
+        display: grid;
+        grid:
+            "n  h" auto "m  m" auto "f  ." auto/1fr 4fr;
+
+    }
+
+    header {
+        grid-area: h;
+
+    }
+
+    nav {
+        grid-area: n;
+    }
+
+    main {
+        grid-area: m;
+    }
+
+    footer {
+        grid-area: f;
+    }
+
+    img {
+        height: 18em;
+        /* border: 10px solid #DEB814; */
+        border: 10px solid #BB9457;
+    }
+
+    .animal {
+        width: 50%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        gap: 2%;
+        margin-top: 1%;
+        justify-content: baseline;
+
+
+    }
+
+    h1 {
+        font-family: 'Sigmar', cursive;
+        /* color: #EF7B45; */
+        color: #BB9457;
+        font-size: 400%;
+        text-align: center;
+    }
+
+    main {
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+    }
+
+    h2 {
+        font-family: 'Oswald', sans-serif;
+    }
+
+    nav {
+        /* background-color: #14591D; */
+        background-color: #305A2D;
+    }
+
+
+    a {
+        /* color: #EF7B45; */
+        color: #BB9457;
+    }
+
+    .Home:hover {
+        background-color: #BB9457;
+        color: #2E0014;
+        display: block;
+        border-radius: 100%;
+        border: 25px solid #BB9457;
+
+    }
+
+    .AfricanArea:hover {
+        /* background-color: #809848; */
+        background-color: #99AA38;
+        color: #0A210F;
+        display: block;
+        border-radius: 100%;
+        border: 25px solid #99AA38;
+    }
+
+    footer {
+        /* background-color: #DEB814 */
+        /* background-color: #4A442D; */
+        background-color: #305A2D;
+        color: #BB9457;
+
+    }
+
+    .ArcticArea:hover {
+        /* color: #037971; */
+        color: #3e92cc;
+        background-color: #16324F;
+        display: block;
+        border-radius: 100%;
+        border: 25px solid #16324F;
+    }
+
+    .OurVisionaries:hover {
+        background-color: #DEB814;
+        color: #6f1D1B;
+        display: block;
+        border-radius: 100%;
+        border: 25px solid #DEB814;
+    }
+
+    .Home {
+        display: block;
+        border-radius: 40%;
+        /* border: 25px solid #14591D;
+    } */
+        border: 25px solid #305A2D;
+    }
+
+    .AfricanArea {
+        display: block;
+        border-radius: 40%;
+        /* border: 25px solid #14591D; */
+        border: 25px solid #305A2D;
+    }
+
+
+    .ArcticArea {
+        display: block;
+        border-radius: 40%;
+        /* border: 25px solid #14591D; */
+        border: 25px solid #305A2D;
+    }
+
+
+    .OurVisionaries {
+        display: block;
+        border-radius: 40%;
+        /* border: 25px solid #14591D; */
+        border: 25px solid #305A2D;
+    }
+
+
+    header {
+        /* background-color: #14591D; */
+        background-color: #4A442D;
+    }
+</style>
+
+</html>

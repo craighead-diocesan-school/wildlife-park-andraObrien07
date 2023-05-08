@@ -35,28 +35,30 @@
             New Zealand. Our park is home to a diverse collection of incredible animals from three distinct ecosystems:
         </p>
 
-
-        <div class="container">
-            <li>the African Savannah</li>
-            <img src="lion-1-jeremy-avery.jpg" alt="Picture of lion 1">
-            <img src="cheetah-1-rodrigo-ardilha.jpg" alt="Picture of cheetah 1">
-            <img src="giraffe-1-nikolay-tchaouchev.jpg" alt="Picture of giraffe 1">
+        <div class="sidesleft">
+            <div class="container">
+                <li>the African Savannah</li>
+                <img src="lion-1-jeremy-avery.jpg" alt="Picture of lion 1">
+                <img src="cheetah-1-rodrigo-ardilha.jpg" alt="Picture of cheetah 1">
+                <img src="giraffe-1-nikolay-tchaouchev.jpg" alt="Picture of giraffe 1">
+            </div>
         </div>
-
-        <div class="container">
-            <li>the American Wilderness</li>
-            <img src="moose-1-sam-te-kiefte.jpg" alt="Picture of moose 1">
-            <img src="bison-1-pete-nuij.jpg" alt="Picture of bison 1">
-            <img src="beaver-1-svetozar-cenisev.jpg" alt="Picture of beaver 1">
+        <div class="sidesright">
+            <div class="container">
+                <li>the American Wilderness</li>
+                <img src="moose-1-sam-te-kiefte.jpg" alt="Picture of moose 1">
+                <img src="bison-1-pete-nuij.jpg" alt="Picture of bison 1">
+                <img src="beaver-1-svetozar-cenisev.jpg" alt="Picture of beaver 1">
+            </div>
         </div>
-
-        <div class="container">
-            <li>the Arctic Tundra</li>
-            <img src="polar-bear-1-jason-hillier.jpg" alt="Picture of polar bear 1">
-            <img src="arctic-fox-1-jonatan-pie.jpg" alt="Picture of fox 1">
-            <img src="fur-seal-1-karen-lau.jpg" alt="Picture of seal">
+        <div class="sidesleft2">
+            <div class="container">
+                <li>the Arctic Tundra</li>
+                <img src="polar-bear-1-jason-hillier.jpg" alt="Picture of polar bear 1">
+                <img src="arctic-fox-1-jonatan-pie.jpg" alt="Picture of fox 1">
+                <img src="fur-seal-1-karen-lau.jpg" alt="Picture of seal">
+            </div>
         </div>
-
 
         <p>Get up close and personal with
             majestic lions, playful arctic foxes, and gentle giraffes, all within our carefully designed and maintained
@@ -100,10 +102,25 @@
         grid-area: f;
     }
 
+    .sidesleft {
+        display: block;
+        padding-right: 18%;
+    }
+
+    .sidesright {
+        display: block;
+        padding-left: 18%;
+    }
+
+    .sidesleft2 {
+        display: block;
+        padding-right: 18%;
+    }
+
     h1 {
         font-family: 'Sigmar', cursive;
-        /* color: #EF7B45; */
-        color: #BB9457;
+        color: #EF7B45;
+
         font-size: 400%;
         text-align: center;
     }
@@ -118,23 +135,23 @@
     }
 
     nav {
-        /* background-color: #14591D; */
-        background-color: #305A2D;
+        background-color: #BB9457;
         text-align: center;
     }
 
 
     a {
         /* color: #EF7B45; */
-        color: #BB9457;
+        /* color: #BB9457; */
+        color: #14591D;
     }
 
     .AfricanArea:hover {
-        background-color: #BB9457;
-        color: #2E0014;
+        background-color: #2E0014;
+        color: #BB9457;
         display: block;
         border-radius: 100%;
-        border: 25px solid #BB9457;
+        border: 25px solid #2E0014;
 
     }
 
@@ -148,11 +165,8 @@
     }
 
     footer {
-        /* background-color: #DEB814 */
-        /* background-color: #4A442D; */
         background-color: #305A2D;
         color: #BB9457;
-
     }
 
     .ArcticArea:hover {
@@ -175,16 +189,18 @@
     .AfricanArea {
         display: block;
         border-radius: 40%;
-        /* border: 25px solid #14591D;
-    } */
-        border: 25px solid #305A2D;
+        /* border: 25px solid #14591D; */
+        border: 25px solid #BB9457;
     }
+
+
 
     .AmericanArea {
         display: block;
         border-radius: 40%;
         /* border: 25px solid #14591D; */
-        border: 25px solid #305A2D;
+        border: 25px solid #BB9457;
+
     }
 
 
@@ -192,7 +208,7 @@
         display: block;
         border-radius: 40%;
         /* border: 25px solid #14591D; */
-        border: 25px solid #305A2D;
+        border: 25px solid #BB9457;
     }
 
 
@@ -200,19 +216,21 @@
         display: block;
         border-radius: 40%;
         /* border: 25px solid #14591D; */
-        border: 25px solid #305A2D;
+        border: 25px solid #BB9457;
+
     }
 
 
     header {
-        /* background-color: #14591D; */
-        background-color: #4A442D;
+        background-color: #14591D;
+
     }
 
     img {
         height: 18em;
         /* border: 10px solid #DEB814; */
-        border: 10px solid #BB9457;
+        /* border: 10px solid #BB9457; */
+        border: 10px solid #EF7B45;
     }
 
     div {

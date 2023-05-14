@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Our Visionaries</h1>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Sigmar&display=swap"
+            rel="stylesheet">
+
+    </header>
+
+    <nav>
+        <a class="Home" href="Home.html">Our Park</a>
+        <a class="AfricanArea" href="UsAfricanArea.html">African Savannah</a>
+        <a class="AmericanArea" href="AmericanArea.html">American Wilderness</a>
+        <a class="ArcticArea" href="ArcticArea.html">Arctic Tundra</a>
+
+    </nav>
+
+    <main>
+        <h2>Meet the Young Visionaries: Alex and Taylor</h2>
+        <p>
+            At just 20 years old, Alex and Taylor, the dynamic duo behind South Canterbury's Premier Wildlife Park, have
+            already made a significant impact in the world of wildlife conservation and education. Their passion for
+            animals and the environment started at a young age, leading them to pursue their dream of creating a unique
+            wildlife park that fosters a strong connection between people and nature. </p>
+        <div class="sidesleft">
+            <h3>Get To Know Alex</h3>
+            <p>
+                Alex, an avid wildlife enthusiast with a keen eye for detail, has been instrumental in designing the
+                park's innovative and immersive habitats. Alex's deep understanding of animal behavior and welfare
+                ensures that every aspect of the park prioritizes the comfort and well-being of its residents. From
+                hands-on experience working with wildlife rehabilitation centers to extensive research, Alex's
+                commitment to the animals is truly inspiring.
+            </p>
+
+        </div>
+        <div class="sidesright">
+            <h3>Get To Know Taylor</h3>
+            <p>Taylor, a natural-born educator with a flair for communication, is responsible for the park's diverse
+                range of educational programs and activities. Taylor's infectious enthusiasm for wildlife and
+                conservation resonates with visitors of all ages, making learning both engaging and enjoyable. With
+                a background in environmental science, Taylor is dedicated to raising awareness about the importance
+                of protecting our planet's rich biodiversity
+            </p>
+
+
+        </div>
+
+
+        <p>Together, Alex and Taylor have turned their vision into a reality, creating a wildlife park that not only
+            showcases some of the world's most extraordinary animals but also inspires a new generation of wildlife
+            enthusiasts and conservationists. Their passion, dedication, and determination at such a young age serve as
+            a testament to the power of following your dreams and making a difference in the world.
+
+        <p>Stroll through our park and observe these magnificent creatures up close, while learning about their natural
+            habitats, behaviors, and the conservation efforts in place to protect their future. Don't miss our daily
+            animal encounters, feeding sessions, and interactive talks led by our passionate team of animal experts.</p>
+    </main>
+
+    <footer>
+        <p>
+
+            Unleash your inner explorer and experience the African Savannah today!
+
+        </p>
+    </footer>
+</body>
+
+<style>
+    body {
+        display: grid;
+        grid:
+            "h  h   ." auto ".  n   n" auto "m  m   m" auto "f  f   f" auto/1fr 6fr 1fr;
+
+
+    }
+
+    header {
+        grid-area: h;
+
+    }
+
+    nav {
+        grid-area: n;
+    }
+
+    main {
+        grid-area: m;
+    }
+
+    footer {
+        grid-area: f;
+    }
+
+    .sidesleft {
+        display: block;
+        padding-right: 18%;
+    }
+
+    .sidesright {
+        display: block;
+        padding-left: 18%;
+    }
+
+    .sidesleft2 {
+        display: block;
+        padding-right: 18%;
+    }
+
+    img {
+        height: 18em;
+        /* border: 10px solid #DEB814; */
+        border: 10px solid #BB9457;
+    }
+
+    .animal {
+        width: 50%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        gap: 2%;
+        margin-top: 1%;
+        justify-content: baseline;
+
+
+    }
+
+    h1 {
+        font-family: 'Sigmar', cursive;
+        /* color: #EF7B45; */
+        /* color: #BB9457; */
+        color: rgb(81, 100, 60);
+        font-size: 400%;
+        text-align: center;
+    }
+
+    main {
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+    }
+
+    h2 {
+        font-family: 'Oswald', sans-serif;
+    }
+
+    nav {
+        /* background-color: #14591D; */
+        /* background-color: #305A2D; */
+        text-align: center;
+        background-color: rgb(81, 100, 60);
+
+    }
+
+
+    a {
+        /* color: #EF7B45; */
+        color: #BB9457;
+    }
+
+    .Home:hover {
+        background-color: #BB9457;
+        color: #2E0014;
+        display: block;
+        border-radius: 100%;
+        border: 25px solid #BB9457;
+
+    }
+
+    .AmericanArea:hover {
+        /* background-color: #809848; */
+        background-color: #99AA38;
+        color: #0A210F;
+        display: block;
+        border-radius: 100%;
+        border: 25px solid #99AA38;
+    }
+
+    footer {
+        /* background-color: #DEB814 */
+        /* background-color: #4A442D; */
+        /* background-color: #305A2D; */
+        background-color: rgb(81, 100, 60);
+        color: #BB9457;
+
+    }
+
+    .ArcticArea:hover {
+        /* color: #037971; */
+        color: #3e92cc;
+        background-color: #16324F;
+        display: block;
+        border-radius: 100%;
+        border: 25px solid #16324F;
+    }
+
+    .AfricanArea:hover {
+        background-color: #2E0014;
+        color: #BB9457;
+        display: block;
+        border-radius: 100%;
+        border: 25px solid #2E0014;
+    }
+
+    .Home {
+        display: block;
+        border-radius: 40%;
+        /* border: 25px solid #14591D;
+    } */
+        border: 25px solid rgb(81, 100, 60);
+
+    }
+
+    .AmericanArea {
+        display: block;
+        border-radius: 40%;
+        /* border: 25px solid #14591D; */
+        /* border: 25px solid #305A2D; */
+        border: 25px solid rgb(81, 100, 60);
+    }
+
+
+    .ArcticArea {
+        display: block;
+        border-radius: 40%;
+        /* border: 25px solid #14591D; */
+        /* border: 25px solid #305A2D; */
+        border: 25px solid rgb(81, 100, 60);
+    }
+
+
+    .AfricanArea {
+        display: block;
+        border-radius: 40%;
+        /* border: 25px solid #14591D; */
+        border: 25px solid rgb(81, 100, 60);
+    }
+
+
+    header {
+        /* background-color: #14591D; */
+        background-color: #ac834c;
+    }
+</style>
+
+</html>
